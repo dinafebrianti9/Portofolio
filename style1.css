@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: inline;
+  
+}
+
+
+.header .jumbotron {
+    
+    font-size: 20px;
+    padding: 120px;
+    text-align: center;
+    background-color: #BE5A83;
+    color: white;
+}
+
+nav {
+    position: sticky;
+    color: #0000;
+    background-color: #FCDFE9;
+    top: 0;
+    margin: 0;
+    padding: .7rem;
+}
+
+nav ul {
+    padding-inline: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    color: #0000;
+}
+
+nav li a {
+    color: #0000;
+    /* padding: 1rem; */
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: rgb(154, 195, 196);
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.main #content,
+aside {
+    padding: 2rem;
+    text-align: justify;
+   
+}
+
+aside article {
+    padding: 0;
+}
+
+.footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #494949;
+    text-align: center;
+}
+
+/* Card */
+.row{
+display: flex;  flex-wrap: wrap-reverse;
+}
+.card-product , .card-contact {
+    padding: 1rem; 
+    text-align: center;
+}
+.card-profile{
+    background-color: #FCDFE9; border-radius: 10px; padding: 15px; margin-top: 1rem;
+}
+.card-footer{
+    /* border: 1px solid #BE5A83; */
+    padding: 1rem;
+    text-align:left;
+}
+.card-product img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-contact img {
+    max-width: 100%; height: auto; object-fit: cover; object-position: center;
+    border-radius: 10px;
+}
+.card-product h4{
+    color: #BE5A83;
+}
+.card-product button {
+        font-size: 15px;
+        background:#BE5A83;
+        color: white;
+        border: white 3px solid;
+        border-radius: 5px;
+        padding: 1rem 0;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+}
+.card-footer button{
+    background: #BE5A83;
+    color: white;
+    border: #BE5A83 3px solid;
+    border-radius: 5px;
+
+}
+.card-contact p{
+display: flex;
+align-items: center;
+}
+
+.card-contact img{
+    padding: 0.5rem;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+}
+
+/* Flex box */
+#content {
+    flex: 3;
+}
+
+aside {
+    flex: 2;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    .main {
+        flex-wrap: wrap-reverse;
+        flex-flow: column nowrap;
+    }
+
+    aside article {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    aside article {
+        padding: 2rem;
+    }
+}
